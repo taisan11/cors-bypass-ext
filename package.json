@@ -1,0 +1,19 @@
+{
+  "name": "cors-bypass-ext",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch --mode chrome",
+    "dev:firefox": "vite build --watch --mode firefox",
+    "build": "tsc && vite build --mode chrome",
+    "build:firefox": "tsc && vite build --mode firefox",
+    "zip": "tsc && vite build --mode chrome-zip",
+    "zip:firefox": "tsc && vite build --mode firefox-zip"
+  },
+  "devDependencies": {
+    "@taisan11/vite-plugin-webext": "^0.6.1",
+    "typescript": "~7.0.2",
+    "vite": "^8.2.2"
+  }
+}

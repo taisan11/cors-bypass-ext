@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        min-width: 220px;
+        padding: 14px 16px;
+        margin: 0;
+      }
+      label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+      }
+      #status {
+        margin: 8px 0 0;
+        font-size: 12px;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body>
+    <label>
+      <input type="checkbox" id="toggle" />
+      <span>CORS Bypass</span>
+    </label>
+    <p id="status"></p>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
